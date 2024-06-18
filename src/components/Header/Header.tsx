@@ -1,4 +1,5 @@
 import {
+  Button,
   Navbar,
   NavbarBrand,
   NavbarContent,
@@ -11,9 +12,24 @@ export default function Header() {
       <Navbar>
         <NavbarContent>
           <NavbarBrand>Logo</NavbarBrand>
-          <NavbarItem>Home</NavbarItem>
-          <NavbarItem>About</NavbarItem>
-          <NavbarItem>Contact</NavbarItem>
+          <NavbarItem
+            as={'a'}
+            href="/"
+          >
+            Home
+          </NavbarItem>
+          <NavbarItem
+            as={'a'}
+            href="/ponentes"
+          >
+            Ponentes
+          </NavbarItem>
+          <NavbarItem
+            as={'a'}
+            href="/eventos"
+          >
+            Eventos
+          </NavbarItem>
         </NavbarContent>
       </Navbar>
     </>
