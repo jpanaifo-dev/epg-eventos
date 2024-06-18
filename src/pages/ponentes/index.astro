@@ -1,9 +1,9 @@
 ---
-import { CardPonente } from '@/components'
 import BaseHead from '../../components/BaseHead.astro'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts'
 import Layout from '@/layouts/layout.astro'
 import Speaker from '@/layouts/Speaker.astro'
+import { PersonList } from '@/content/ponentes'
 ---
 
 <!doctype html>
@@ -18,20 +18,7 @@ import Speaker from '@/layouts/Speaker.astro'
     <Layout>
       <Speaker>
         <main class="container">
-          <section>
-            <h1>Speaker</h1>
-            <p>
-              Hi, I'm <strong>Shawn Wang</strong> (swyx). I'm a <a
-                href="https://twitter.com/swyx">Developer Experience Engineer</a
-              > at AWS Amplify. I help developers learn to build modern fullstack
-              serverless web apps. I'm also a <a
-                href="https://www.youtube.com/swyx">Twitch streamer</a
-              > and <a href="https://www.swyx.io/writing">blogger</a>.
-            </p>
-          </section>
-          <section>
-            <CardPonente />
-          </section>
+          <PersonList />
         </main>
       </Speaker>
     </Layout>
