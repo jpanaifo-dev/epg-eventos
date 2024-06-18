@@ -1,0 +1,26 @@
+---
+import BaseHead from '../../components/BaseHead.astro'
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts'
+import Layout from '@/layouts/layout.astro'
+import Speaker from '@/layouts/Speaker.astro'
+import { PersonList } from '@/content/ponentes'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={SITE_TITLE}
+      description={SITE_DESCRIPTION}
+    />
+  </head>
+  <body>
+    <Layout>
+      <Speaker>
+        <main class="container">
+          <PersonList />
+        </main>
+      </Speaker>
+    </Layout>
+  </body>
+</html>

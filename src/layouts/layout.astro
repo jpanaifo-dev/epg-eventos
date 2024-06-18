@@ -1,0 +1,23 @@
+---
+import { BaseHead, Footer, Header } from '@/components'
+const { title } = Astro.props
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <BaseHead
+      title={title}
+      description="Astro is a new kind of static site builder that delivers lightning-fast performance with a modern developer experience."
+    />
+  </head>
+  <body>
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>

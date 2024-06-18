@@ -1,0 +1,27 @@
+---
+import Event from '@/layouts/Event.astro'
+import BaseHead from '../../components/BaseHead.astro'
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts'
+import Layout from '@/layouts/layout.astro'
+import { EventsList } from '@/content/eventos'
+---
+
+---
+
+<html lang="en">
+  <head>
+    <BaseHead
+      title={SITE_TITLE}
+      description={SITE_DESCRIPTION}
+    />
+  </head>
+  <body>
+    <Layout>
+      <Event>
+        <main class="container">
+          <EventsList />
+        </main>
+      </Event>
+    </Layout>
+  </body>
+</html>
