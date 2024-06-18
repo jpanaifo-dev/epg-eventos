@@ -1,5 +1,5 @@
 interface IProps {}
 
-export const CardEvento = (props: IProps) => {
+export const CardPonente = (props: IProps) => {
   return <></>
 }
