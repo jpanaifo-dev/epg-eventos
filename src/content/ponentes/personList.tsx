@@ -10,7 +10,7 @@ export default function PersonList() {
 
   return (
     <main className="py-16">
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
         {ponentes?.map((ponente) => (
           <CardPonente
             key={ponente.id}
