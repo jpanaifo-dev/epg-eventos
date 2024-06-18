@@ -9,7 +9,7 @@ export default function EventsList() {
   const eventList = data as IEvent[]
 
   return (
-    <>
+    <main className="py-16">
       <div className="grid grid-cols-2 gap-4">
         {eventList?.map((evento) => (
           <CardEvento
@@ -18,6 +18,6 @@ export default function EventsList() {
           />
         ))}
       </div>
-    </>
+    </main>
   )
 }
