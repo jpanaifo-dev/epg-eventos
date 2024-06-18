@@ -1,8 +1,18 @@
+import type { IEvent } from '@/types'
 import { Avatar, Card, CardBody, Chip } from '@nextui-org/react'
 
-interface IProps {}
+interface IProps {
+  evento: IEvent
+}
 
 export const CardEvento = (props: IProps) => {
+  const {
+    evento: {
+      title,
+      person: { name, surName },
+    },
+  } = props
+
   return (
     <>
       <Card
@@ -26,10 +36,10 @@ export const CardEvento = (props: IProps) => {
                 Evento
               </Chip>
               <div>
-                <h1 className="text-xl">
-                  MICROCAPSULACIÓN APLICADO A ALIMENTOS
-                </h1>
-                <p className="font-normal text-gray-500">Nombre del autor</p>
+                <h1 className="text-xl">{title}</h1>
+                <p className="font-light text-gray-500">
+                  {name} {surName}
+                </p>
               </div>
             </section>
           </div>
