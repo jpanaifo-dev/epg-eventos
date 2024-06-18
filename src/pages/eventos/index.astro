@@ -3,10 +3,11 @@ import Event from '@/layouts/Event.astro'
 import BaseHead from '../../components/BaseHead.astro'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts'
 import Layout from '@/layouts/layout.astro'
-import { CardEvento } from '@/components'
+import { EventsList } from '@/content/eventos'
 ---
 
-<!doctype html>
+---
+
 <html lang="en">
   <head>
     <BaseHead
@@ -30,7 +31,7 @@ import { CardEvento } from '@/components'
             </p>
           </section>
           <section>
-            <CardEvento />
+            <EventsList />
           </section>
         </main>
       </Event>
