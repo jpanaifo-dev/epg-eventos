@@ -9,7 +9,7 @@ export const CardEvento = (props: IProps) => {
   const {
     evento: {
       title,
-      person: { name, surName },
+      person: { surName,lastName },
     },
   } = props
 
@@ -24,7 +24,7 @@ export const CardEvento = (props: IProps) => {
           <div className="flex gap-4">
             <section>
               <Avatar
-                src="/images/evento.webp"
+                src="/blog-placeholder-1.jpg"
                 className="w-32 h-32"
               />
             </section>
@@ -38,7 +38,7 @@ export const CardEvento = (props: IProps) => {
               <div>
                 <h1 className="text-xl">{title}</h1>
                 <p className="font-light text-gray-500">
-                  {name} {surName}
+                  {surName} {lastName}
                 </p>
               </div>
             </section>

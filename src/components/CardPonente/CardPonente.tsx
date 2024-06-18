@@ -7,7 +7,7 @@ interface IProps {
 
 export const CardPonente = (props: IProps) => {
   const {
-    ponente: { name, surName },
+    ponente: { surName, lastName },
   } = props
   return (
     <>
@@ -21,7 +21,7 @@ export const CardPonente = (props: IProps) => {
         />
         <CardBody>
           <h4>
-            {name} {surName}
+            {surName} {lastName}
           </h4>
         </CardBody>
       </Card>
