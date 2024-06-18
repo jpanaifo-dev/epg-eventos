@@ -1,5 +1,4 @@
 import {
-  Button,
   Navbar,
   NavbarBrand,
   NavbarContent,
@@ -9,9 +8,25 @@ import {
 export default function Header() {
   return (
     <>
-      <Navbar>
+      <Navbar
+        className="fixed top-0 w-full z-50 bg-transparent shadow-md"
+        classNames={{
+          item: 'text-white',
+        }}
+        maxWidth="2xl"
+      >
         <NavbarContent>
-          <NavbarBrand>Logo</NavbarBrand>
+          <NavbarBrand>
+            <NavbarItem
+              as={'a'}
+              href="/"
+            >
+              <img
+                src="/images/logo.webp"
+                alt="Logo"
+              />
+            </NavbarItem>
+          </NavbarBrand>
           <NavbarItem
             as={'a'}
             href="/"
