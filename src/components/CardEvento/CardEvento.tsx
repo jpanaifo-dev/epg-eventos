@@ -10,6 +10,9 @@ export const CardEvento = (props: IProps) => {
     evento: {
       title,
       person: { name, surName },
+      date,
+      timeStart,
+      timeEnd
     },
   } = props
 
@@ -40,6 +43,9 @@ export const CardEvento = (props: IProps) => {
                 <p className="font-light text-gray-500">
                   {name} {surName}
                 </p>
+                <div className='justify-center items-center'>
+                  <p className='bg-blue-600 p-1 rounded-sm text-white w-72 text-center'>{date} {timeStart} - {timeEnd}</p>
+                </div>
               </div>
             </section>
           </div>
